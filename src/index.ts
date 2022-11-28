@@ -1,6 +1,4 @@
-export * from './types'
-import { parse } from './fns'
-
-export const parseDuration = parse
+export type { Duration, UnitOfTime } from './types'
+import { parse } from './dur'
 
 export default parse

@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "lib": ["es2016"],
-    "declaration": true,
-    "sourceMap": true
+    "moduleResolution": "node",
+    "target": "es2020",
+    "lib": ["es2020"],
+    "esModuleInterop": true,
+    "strict": true
   },
   "include": [
     "src/**/*.ts"
   ],
-  "exclude": ["node_modules", "dist", "src/tests"]
+  "exclude": ["node_modules", "dist"]
 }

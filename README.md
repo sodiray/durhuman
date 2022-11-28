@@ -1,21 +1,20 @@
 # Human Duration
-I am tired of seeing `exp: 22220201838`. What the f*** does that mean to a human? This
-little package let's you write `exp: '23 days'` and parse the string `'23 days'` into
-a number.
+
+I am tired of seeing `exp: 22220201838`. What does that mean to a human? This tiny package let's you write `'23 days'` and parse it to into a number.
 
 ## Install
+
 ```
 yarn add durhuman
 ```
-or
-```
-npm install durhuman
-```
-Types are included, if your into that.
+
+Includes a `Duration` type that can be really helpful if you're using Typescript.
 
 ## Usage
-By default parse will parse as seconds. Pass a seconds `asUnit` argument
-to have it converted to the unit you want.
+
+By default parse will parse as seconds. Pass the optional `unit` argument
+to have it convert to a differnt unit of time.
+
 ```ts
 import dur, { Duration } from 'durhuman'
 
